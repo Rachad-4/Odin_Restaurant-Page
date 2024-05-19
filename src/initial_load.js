@@ -1,3 +1,4 @@
+
 export default function addContent() {
     const content = document.querySelector("#content");
     var h1 = document.createElement("h1");
