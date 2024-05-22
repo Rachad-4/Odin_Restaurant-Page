@@ -1,18 +1,27 @@
 
 export default function addContent() {
     const content = document.querySelector("#content");
+    
+    content.innerHTML = "";
+    content.className = "";
+
+
     var h1 = document.createElement("h1");
     var p = document.createElement("p");
 
-    h1.textContent = "Welcome to the GOOD life.";
-    p.textContent = "Food was made for digesting... Not dissecting!";
+    content.classList.add("home");
+    h1.setAttribute("id", "brand");
 
-    content.appendChild(img_create("https://media.greenmatters.com/brand-img/6y3xk06Da/0x0/organic-food-1564606251269.jpg","picture of produce"));
     content.appendChild(h1);
     content.appendChild(p);
+
+    p.textContent = "Less is more! Less Spending = More Saving. LESS Quantity = More Quality. We live this idea!! We are offering just that - HIGH Quality - single items! Who needs a bunch of grapes if the majority of them aren't edible? Not you. Who needs a full kit-kat? Not you! One stick may be enough. Here, you can order a high quality grape or receive the perfect portion.";
+    h1.textContent = "Singlè";
+
+
 } 
 
-function img_create(src, alt) {
+export function img_create(src, alt) {
     var img = document.createElement("img");
     img.src = src;
     if (img.alt != null) img.alt = alt;

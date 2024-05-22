@@ -1,5 +1,148 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("./assets/fonts/Lunatic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyFont2";
+    src: url("./assets/fonts/Moonrising Italic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyFont3";
+    src: url("./assets/fonts/Kingshare.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyFont4";
+    src: url("./assets/fonts/Half\ Price\ 4\ You.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+html, body {
+    height: 100%;
+}
+
 body {
-    background-image: url("https://png.pngtree.com/background/20210717/original/pngtree-wallpaper-aesthetic-purple-watercolor-picture-image_1438628.jpg");
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("https://wallpaperaccess.com/full/2908282.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+#brand {
+    font-family: "MyFont";
+    font-size: 50px;
+    color: green;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+button {
+    color: white;
+    background-color: green;
+    border-style: hidden;
+    border-radius: 2cap;
+    height: 50px;
+    width: 100px;
+    font-size: large;
+    margin-top: 5px;
+}
+
+.home > #brand {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    margin-bottom: -5px;
+}
+
+.home > p {
+    font-family: "MyFont2";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    letter-spacing: 1.5px;
+    color: rgb(50, 114, 126);
+    line-height: 50px;
+    font-size: 23px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* This allows the content to take up remaining space */
+    background-image: url("https://i.pinimg.com/originals/f5/11/09/f5110917c4d5042b56502835189715a7.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.menu {
+    display: flex;
+
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.price-card {
+    text-align: right;
+    width: 200px;
+}
+
+.desc {
+    font-family: "MyFont2";
+    color: rgb(50, 114, 126);
+    font-size: 23px;
+}
+
+.price {
+    font-family: "MyFont4";
+    color: rgb(50, 114, 126);;
+}
+
+footer {
+    display: flex;
+    background-image: url("https://wallpaperaccess.com/full/2908282.jpg");
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+    font-size: 20px;
+    height: 50px; /* Give some height to the footer */
+}
+
+a {
+    font-family: "MyFont3";
 }
