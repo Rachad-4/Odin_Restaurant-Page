@@ -101,7 +101,7 @@ button {
 
 .menu {
     display: flex;
-
+    gap: 30px;
     justify-content: center;
 }
 
@@ -116,6 +116,7 @@ img {
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    box-shadow: 5px 10px rgb(202, 233, 176);
 }
 
 .price-card {
@@ -123,7 +124,7 @@ img {
     width: 200px;
 }
 
-.desc {
+.desc, #info{
     font-family: "MyFont2";
     color: rgb(50, 114, 126);
     font-size: 23px;
@@ -132,6 +133,30 @@ img {
 .price {
     font-family: "MyFont4";
     color: rgb(50, 114, 126);;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+#info > img {
+    width: 500px;
+    height: 500px;
+    border-radius: 2cap;
+    padding-bottom: 10px;
 }
 
 footer {
